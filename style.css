@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: monaco,Consolas,Lucida Console,monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+    background-color: gray;
+}
+
+ul {
+    list-style: none;
+}
+
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+#Title {
+    font-size: 45px;
+}
+
+.Content {
+    background: linear-gradient(90deg, #627ec6 100%, #3F2B96 40%);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 8px;
+    gap: 5px;
+    height: 560px;
+    width: 830px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.Selections {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+    align-items: center;
+}
+
+.Size-Select,
+.Color-Select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+#red {
+    background-color: red;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#black {
+    color: white;
+    background-color: black;
+    border: solid white 1px;
+}
+
+#rainbow {
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 20%,
+        rgba(79, 220, 74, 1) 30%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 70%,
+        rgba(186, 12, 248, 1) 80%,
+        rgba(251, 7, 217, 1) 90%,
+        rgba(255, 0, 0, 1) 100%
+    );
+}
+
+.Button {
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+}
+
+.Button:hover {
+    transition: 0.1s;
+    border-radius: 6px;
+    -webkit-transform: scale(1.08);
+}
+
+.Button:active {
+    background-color: #3F2B96;
+}
+
+
+.Grid {
+    display: flex;
+    flex-flow: row wrap;
+    height: 560px;
+    width: 560px;
+    background-color: black;
+}
+
+.Cell {
+    background-color: white;
+    border: solid black 1px;
+    transition: 0.2s ease;
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+}
